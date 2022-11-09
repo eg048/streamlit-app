@@ -9,7 +9,7 @@ from pathlib import Path
 # IMPORT DATA
 
 # Data import (you may need to change the path)
-df = pd.read_csv("https://raw.githubusercontent.com/kirenz/datasets/master/oecd.csv")
+df = pd.read_csv('https://raw.githubusercontent.com/kirenz/datasets/master/oecd.csv')
 
 
 ###-------------------###
