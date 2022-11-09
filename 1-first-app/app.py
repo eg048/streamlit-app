@@ -6,13 +6,11 @@ import altair as alt
 from pathlib import Path
 
 #-------------------#
-# IMPORT LOCAL DATA
 
-# Obtain home path
-home_path = str(Path.home())
+# IMPORT DATA
 
 # Data import (you may need to change the path)
-df = pd.read_csv(home_path + "/streamlit-app/data/oecd.csv")
+df = pd.read_csv('https://raw.githubusercontent.com/kirenz/datasets/master/oecd.csv')
 
 
 ###-------------------###
@@ -22,10 +20,10 @@ df = pd.read_csv(home_path + "/streamlit-app/data/oecd.csv")
 # HEADER
 
 # Title of our app
-st.title("My first App")
+st.title("Text") #Hier kann ich die Überschrift ändern
 
 # Add image
-st.image('hdm-logo.jpg')
+st.image('hdm-logo.jpg') #Hier kann ich das Bild ändern
 
 # Add header
 st.header("My header")
@@ -34,13 +32,13 @@ st.header("My header")
 # SIDEBAR
 
 # Header
-st.sidebar.header("This is my sidebar")
+st.sidebar.header("This is my sidebar") #Seitenbalken
 
 # Make a slider
 satisfaction = st.sidebar.slider('What is your life satisfaction?', 0, 10, 1)
 
 # Show output of slider selection
-st.sidebar.write("My life satisfaction is around ", satisfaction, 'points')
+st.sidebar.write("My life satisfaction is around ", satisfaction, 'points') #Interaktiv
 
 #-------------------#
 # BODY
