@@ -6,13 +6,10 @@ import altair as alt
 from pathlib import Path
 
 #-------------------#
-# IMPORT LOCAL DATA
-
-# Obtain home path
-home_path = str(Path.home())
+# IMPORT DATA
 
 # Data import (you may need to change the path)
-df = pd.read_csv(home_path + "/streamlit-app/data/oecd.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/kirenz/datasets/master/oecd.csv")
 
 
 ###-------------------###
